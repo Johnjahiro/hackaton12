@@ -13,6 +13,7 @@ class Dropdown {
     dropBtn.addEventListener("mouseover", () => {
       if (dropdownContent.style.display === "none") {
         dropdownContent.style.display = "block";
+        dropdownContent.style.transition = "display .5s easy"
         return;
       }
     });
