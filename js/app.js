@@ -1,15 +1,14 @@
 class Dropdown {
   constructor() {
     const dropBtn = document.getElementById("dropBtn");
-    const dropdownContent = document.getElementById("dropdownContent");
-    // const btnAcordion = document.getElementById("btnAcordion")
-    // const acordionContent = document.getElementById("acordionContent")
+    const dropdownContent = document.getElementById("dropdownContent");    
 
     dropdownContent.style.display = "none";
 
     this.showMenu();
     this.hideMenu();
     this.showAcordion();
+    this.showModal();
   }
 
   showMenu() {
@@ -34,7 +33,7 @@ class Dropdown {
     const menuAcordion = document.getElementById("menuAcordion");
 
     menuAcordion.addEventListener("click", (e) => {
-      // console.log(e)    
+      // console.log(e)
 
       let sibling = e.target.nextElementSibling;
 
@@ -42,9 +41,22 @@ class Dropdown {
         sibling.style.display = "none";
       } else {
         sibling.style.display = "block";
-        
       }
     });
+  }
+
+  showModal() {
+    const btnModal = document.querySelector(".btnModal");
+    const btnClose = document.querySelector(".close");
+    const modalWindow = document.querySelector(".modalWindow");
+
+    btnModal.addEventListener("click", () => {
+      modalWindow.style.display = "block";
+    });
+
+    btnClose.addEventListener('click', () => {
+      modalWindow.style.display = "none"
+    })
   }
 }
 
