@@ -29,11 +29,12 @@ class Dropdown {
   }
 
   showAcordion() {
+    const btnAcordion = document.getElementById("btnAcordion");
     const acordionContent = document.getElementById("acordionContent");
     const menuAcordion = document.getElementById("menuAcordion");
 
     menuAcordion.addEventListener("click", (e) => {
-      // console.log(e)
+      // console.log(e)    
 
       let sibling = e.target.nextElementSibling;
 
@@ -41,6 +42,7 @@ class Dropdown {
         sibling.style.display = "none";
       } else {
         sibling.style.display = "block";
+        
       }
     });
   }

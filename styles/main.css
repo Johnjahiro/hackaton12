@@ -93,9 +93,12 @@ main {
   box-shadow: 0px 0px 3px;
 }
 
+p {
+  text-align: justify;
+}
 .wrapper {
   width: 100%;  
-  overflow: hidden;
+  overflow: hidden;  
 }
 
 .wrapper:first-child {
@@ -114,12 +117,19 @@ main {
   border-bottom: 1px solid #cecece;
   cursor: pointer;
   transition: .5s;
-  font-size: 1em;
+  background: indianred;
+  color: white;  
+  font-size: .9em;
 }
 
 .acordionContent {
   display: none;
   padding: 15px;
+  transition: all .5 easy;
+}
+
+.btnAcordion:hover {
+  background: rgb(246, 110, 110);
 }
 
 
