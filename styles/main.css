@@ -59,10 +59,6 @@ li {
   align-items: inherit;
 }
 
-.menu__link:hover {
-  background: rgb(154, 221, 53);  
-}
-
 .menu__dropdown {
   width: 30%;
   height: auto;
@@ -75,4 +71,8 @@ li {
   display: block;
   padding: .5em;
   border: 1px solid #cecece;
+}
+
+.dropdownContent__link:hover {
+  background: #fbe8e8;
 }
