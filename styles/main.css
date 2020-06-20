@@ -114,10 +114,12 @@ main {
   border-bottom: 1px solid #cecece;
   cursor: pointer;
   transition: .5s;
+  font-size: 1em;
 }
 
 .acordionContent {
   display: none;
+  padding: 15px;
 }
 
 
